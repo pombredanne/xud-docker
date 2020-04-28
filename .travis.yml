@@ -18,3 +18,7 @@ jobs:
       script: tools/push --manifest-list
     - stage: Test common cases
       script: tools/test
+
+notifications:
+  webhooks:
+    - http://104.196.206.7:5000/webhooks/travis
