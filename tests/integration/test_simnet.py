@@ -287,7 +287,6 @@ def diagnose():
 
 
 @pytest.mark.integration_test
-@pytest.mark.skip(reason="no way of currently bypassing this")
 def test1():  # dummy comment
     print()  # avoid output first line being in the end of pytest case line
     cleanup()
